@@ -8,7 +8,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@Mapper(imports = {CountryService.class})
+@Mapper(uses = {CountryService.class})
 public abstract class CountryMapper {
 
     @Autowired
